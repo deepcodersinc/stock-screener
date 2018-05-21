@@ -39,34 +39,34 @@ Once the application is running, the user should be able to go to the browser an
 
 ## API Specs
 
-**API-1.0** 
-URI: /api/data/{symbol}/close?startDate=<YYYY-MM-DD>&endDate=<YYYY-MM-DD>
-Method: GET
-Params: startDate and endDate in YYYY-MM-DD format
-Response: List of [StockQuoteResponse](src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML
-Description: The API gets all closing prices from the given start and end date
-Example: ```http://localhost:8080/api/data/F/close?startDate=2008-02-01&endDate=2008-12-31```
+**API-1.0**  
+URI: /api/data/{symbol}/close?startDate=<YYYY-MM-DD>&endDate=<YYYY-MM-DD>  
+Method: GET  
+Params: startDate and endDate in YYYY-MM-DD format  
+Response: List of [StockQuoteResponse]  (src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML  
+Description: The API gets all closing prices from the given start and end date  
+Example: ```http://localhost:8080/api/data/F/close?startDate=2008-02-01&endDate=2008-12-31```  
 
-**API-2.0** 
-URI: /api/data/{symbol}/avgclose
-Method: GET
-Response: List of [StockQuoteResponse](src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML
-Description: The API gets all average annual closing prices till today
-Example: ```http://localhost:8080/api/data/F/avgclose/```
+**API-2.0**  
+URI: /api/data/{symbol}/avgclose  
+Method: GET  
+Response: List of [StockQuoteResponse](src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML  
+Description: The API gets all average annual closing prices till today  
+Example: ```http://localhost:8080/api/data/F/avgclose/```  
 
-**API-2.1** 
-URI: /api/data/{symbol}/avgclose/year/{year}
-Method: GET
-Response: List of [StockQuoteResponse](src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML
-Description: The API gets all average monthly closing prices for a given year
-Example: ```http://localhost:8080/api/data/F/avgclose/year/1999```
+**API-2.1**  
+URI: /api/data/{symbol}/avgclose/year/{year}  
+Method: GET  
+Response: List of [StockQuoteResponse]  (src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML  
+Description: The API gets all average monthly closing prices for a given year  
+Example: ```http://localhost:8080/api/data/F/avgclose/year/1999```  
 
-**API-2.2** 
-URI: /api/data/{symbol}/avgclose/year/{year}/month/{month}
-Method: GET
-Response: List of [StockQuoteResponse](src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML
-Description: The API gets all average monthly closing prices for a given year
-Example: ```http://localhost:8080/api/data/F/avgclose/year/1999/month/3```
+**API-2.2**  
+URI: /api/data/{symbol}/avgclose/year/{year}/month/{month}  
+Method: GET  
+Response: List of [StockQuoteResponse]  (src/main/java/com/dci/stock/bean/StockQuoteResponse.java) in JSON or XML  
+Description: The API gets all average monthly closing prices for a given year  
+Example: ```http://localhost:8080/api/data/F/avgclose/year/1999/month/3```  
 
 
 ## Technology choice
