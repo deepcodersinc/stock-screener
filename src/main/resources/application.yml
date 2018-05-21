@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github-client:
+            client-id: 53ae5610b248d7c58691
+            client-secret: ce6338458e21240b42dc9bf488d72396d95915a6
+            client-name: Github user
+            provider: github
+            scope: user
+            redirect-uri-template: http://localhost:8080/login/oauth2/code/github
+  jackson:
+    default-property-inclusion: NON_NULL
