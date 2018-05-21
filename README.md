@@ -26,21 +26,11 @@
 
 ### Run the application
 
-4. To start the application, copy the file [data-source.properties](src/main/resources/data-source.properties) into a new folder called 'conf' in your HOME directory so that it looks like ```{$HOME}\conf\data-source.properties```
-You can change the source of data files by updating the properties ```csv.filename``` inside this file.
-
-```
-To know your HOME directory:
-Unix/Linux -> echo $HOME
-Windows -> echo %USERPROFILE%
-```
-5. Goto the directory ```<project_root>\target\``` from the terminal and use the below command to start the application
+6. Goto the directory ```<project_root>\target\``` from the terminal and use the below command to start the application
  
 ```java -jar stock-screener-0.0.1-SNAPSHOT.jar --Spring.config.location=file:conf\data-source.properties```
 
-6. Tomcat starts on port 8080 and the application can be accessed from the browser at http://localhost:8080/
-
-Note: To run the application from an IDE, data-source.properties need not be in the $HOME directory but the data-source.properties in the source code is used. 
+7. Tomcat starts on port 8080 and the application can be accessed from the browser at http://localhost:8080/
 
 
 ## Using the Application
@@ -119,4 +109,7 @@ Considering this is a proof of concept and time constraints, some stuff were ove
 3. Swagger implementation for the API's
 
 4. Paginate API-1.0 for close price
+
+5. Externalize data-source.properties
+
 
